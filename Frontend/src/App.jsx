@@ -22,7 +22,7 @@ function App() {
   async function reviewCode() {
     setLoading(true);
     try {
-      const response = await axios.post("https://codelens-lz5v.onrender.com", {
+      const response = await axios.post("http://localhost:3000/ai/get-review", {
         code,
       });
       setreview(response.data);
