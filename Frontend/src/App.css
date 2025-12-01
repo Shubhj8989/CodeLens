@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* 🔥 Mobile & Tablet Responsiveness */
+
 @media (max-width: 900px) {
   main {
     flex-direction: column;
@@ -20,7 +20,7 @@
   }
 
   .left .code {
-    height: 300px; /* make editor usable on phones */
+    height: 300px; 
   }
 
   .review {
@@ -38,7 +38,7 @@
   }
 }
 
-/* 🔥 Extra Small Devices */
+
 @media (max-width: 600px) {
   main {
     padding: 0.7rem;
