@@ -4,6 +4,62 @@
   box-sizing: border-box;
 }
 
+/* 🔥 Mobile & Tablet Responsiveness */
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  main .left,
+  main .right {
+    flex-basis: 100%;
+    height: auto;
+    min-height: 50vh;
+  }
+
+  .left .code {
+    height: 300px; /* make editor usable on phones */
+  }
+
+  .review {
+    position: static;
+    margin: 1rem auto;
+    width: fit-content;
+    display: block;
+  }
+
+  .logo img {
+    left: 0;
+    margin: auto;
+    display: block;
+    height: 60px;
+  }
+}
+
+/* 🔥 Extra Small Devices */
+@media (max-width: 600px) {
+  main {
+    padding: 0.7rem;
+  }
+
+  .left .code {
+    height: 250px;
+  }
+
+  .right {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .review {
+    padding: 0.4rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+
 html,
 body,
 #root {
