@@ -22,7 +22,7 @@ function App() {
   async function reviewCode() {
     setLoading(true);
     try {
-      const response = await axios.post("https://codelens-server.vercel.app/ai/get-review", {
+      const response = await axios.post("https://codelens-server.vercel.app", {
         code,
       });
       setreview(response.data);
